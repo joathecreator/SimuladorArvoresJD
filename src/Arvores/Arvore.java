@@ -66,7 +66,7 @@ public abstract class Arvore {
 
     public static void main(String[] args) {
 
-        ArvoreBinariaBusca arvore = new ArvoreBinariaBusca();
+        ArvoreBinaria arvore = new ArvoreBinaria();
     }
 
     public Node getMenor(Node n) {

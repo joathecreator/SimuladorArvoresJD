@@ -141,7 +141,7 @@ public class ArvoreVermelhaPreta extends Arvore {
 
     @Override
     public void transformacao1(List<Node> listaNode) {
-        ArvoreBinariaBusca nova = new ArvoreBinariaBusca();
+        ArvoreBinaria nova = new ArvoreBinaria();
         for (Integer v : getValores()) {
             nova.put(v);
         }

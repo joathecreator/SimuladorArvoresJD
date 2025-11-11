@@ -4,15 +4,15 @@ import br.com.davidbuzatto.jsge.core.engine.EngineFrame;
 import java.util.List;
 import static javax.swing.WindowConstants.DISPOSE_ON_CLOSE;
 
-public class ArvoreBinariaBusca extends Arvore {
+public class ArvoreBinaria extends Arvore {
 
-    public ArvoreBinariaBusca() {
+    public ArvoreBinaria() {
     }
 
-    public ArvoreBinariaBusca(List<Node> listaNode) {
+    public ArvoreBinaria(List<Node> listaNode) {
         this.listaNode = listaNode;
         if (!listaNode.isEmpty()) {
-            // A raiz é o primeiro elemento (índice 0)
+
             raiz = listaNode.get(0); 
         }
     }
