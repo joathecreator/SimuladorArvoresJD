@@ -10,7 +10,7 @@ import java.util.List;
  *
  * @author JottaD
  */
-public abstract class Arvore {
+public abstract class DesenhoArvore {
 
     protected final Image logo = loadImage("resources/images/logoSDSS.png");
     protected Node raiz;
@@ -19,11 +19,11 @@ public abstract class Arvore {
     protected double distanciaX = 320;
     protected final double distanciaY = 160;
 
-    public Arvore() {
+    public DesenhoArvore() {
 
     }
 
-    public Arvore(List<Node> listaNode) {
+    public DesenhoArvore(List<Node> listaNode) {
         this.listaNode = listaNode;
     }
 

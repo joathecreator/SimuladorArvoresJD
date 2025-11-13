@@ -4,7 +4,7 @@ import br.com.davidbuzatto.jsge.core.engine.EngineFrame;
 import Arvores.ArvoreAVL;
 import Arvores.ArvoreBinaria;
 import Arvores.ArvoreVermelhaPreta;
-import Arvores.JanelaArvore;
+import Arvores.PainelArvores;
 import br.com.davidbuzatto.jsge.imgui.GuiButton;
 import br.com.davidbuzatto.jsge.imgui.GuiComponent;
 import java.awt.Color;
@@ -75,11 +75,11 @@ public class JanelaPrincipal extends EngineFrame {
         if (isMouseButtonPressed(MOUSE_BUTTON_LEFT)) {
             
             if (botaoArvoreBinaria.isMousePressed()) {
-                abrirJanela(new JanelaArvore("Árvore Binária de Busca", new ArvoreBinaria()));
+                abrirJanela(new PainelArvores("Árvore Binária de Busca", new ArvoreBinaria()));
             } else if (botaoArvoreAVL.isMousePressed()) {
-                abrirJanela(new JanelaArvore("Árvore AVL", new ArvoreAVL()));
+                abrirJanela(new PainelArvores("Árvore AVL", new ArvoreAVL()));
             } else if (botaoArvoreRedBlack.isMousePressed()) {
-                abrirJanela(new JanelaArvore("Árvore Vermlha e Preta", new ArvoreVermelhaPreta()));
+                abrirJanela(new PainelArvores("Árvore Vermlha e Preta", new ArvoreVermelhaPreta()));
             }
         }
         

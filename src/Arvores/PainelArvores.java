@@ -12,7 +12,7 @@ import java.awt.Color;
 import java.util.ArrayList;
 import java.util.List;
 
-public class JanelaArvore extends EngineFrame {
+public class PainelArvores extends EngineFrame {
 
     private Camera2D camera;
     private Rectangle bordaCamera;
@@ -29,7 +29,7 @@ public class JanelaArvore extends EngineFrame {
     private boolean exibirInput;
     private boolean isPutting;
 
-    private Arvore arvore;
+    private DesenhoArvore arvore;
     
     private final Color corBotao = new Color(0, 0, 0);
     private final int BOTAO_LARGURA = 80;
@@ -38,7 +38,7 @@ public class JanelaArvore extends EngineFrame {
     private final int MARGEM_Y = 15;
 
 
-    public JanelaArvore(String title, Arvore arvore) {
+    public PainelArvores(String title, DesenhoArvore arvore) {
         super(
                 800, // largura
                 900, // altura

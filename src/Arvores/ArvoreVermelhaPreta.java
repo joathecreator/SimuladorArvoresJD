@@ -4,7 +4,7 @@ import br.com.davidbuzatto.jsge.core.engine.EngineFrame;
 import java.util.List;
 import static javax.swing.WindowConstants.DISPOSE_ON_CLOSE;
 
-public class ArvoreVermelhaPreta extends Arvore {
+public class ArvoreVermelhaPreta extends DesenhoArvore {
 
     public ArvoreVermelhaPreta() {
 
@@ -145,7 +145,7 @@ public class ArvoreVermelhaPreta extends Arvore {
         for (Integer v : getValores()) {
             nova.put(v);
         }
-        transformacao(new JanelaArvore("Árvore Binária de Busca", nova));
+        transformacao(new PainelArvores("Árvore Binária de Busca", nova));
     }
 
     @Override
@@ -154,7 +154,7 @@ public class ArvoreVermelhaPreta extends Arvore {
         for (Integer v : getValores()) {
             nova.put(v);
         }
-        transformacao(new JanelaArvore("Árvore AVL", nova));
+        transformacao(new PainelArvores("Árvore AVL", nova));
     }
 
     private void transformacao(EngineFrame e) {
